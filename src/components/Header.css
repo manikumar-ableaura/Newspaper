@@ -74,6 +74,7 @@
 }
 
 .Main-layout {
+    cursor: pointer;
     height: 70px;
     display: flex;
     align-items: center;
