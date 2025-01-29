@@ -1,0 +1,39 @@
+body {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.common{
+  display: flex;
+  
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px; /* Reduce padding on mobile */
+  }
+
+  .common {
+    flex-direction: column; /* Stack common elements vertically */
+    gap: 10px; /* Add some gap between elements */
+  }
+}
+
+/* -----------------------------------
+   Responsive Styles for Tablets
+----------------------------------- */
+
+@media (max-width: 1024px) {
+  body {
+    padding-left: 10px;
+    padding-right: 15px; /* Adjust padding for tablets */
+  }
+
+  .common {
+    flex-direction: column; /* Stack common elements vertically */
+    gap: 20px; /* Add more gap for better spacing */
+  }
+}
