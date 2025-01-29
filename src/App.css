@@ -13,27 +13,25 @@ body {
 @media (max-width: 768px) {
   body {
     padding-left: 20px;
-    padding-right: 20px; /* Reduce padding on mobile */
+    padding-right: 20px; 
   }
 
   .common {
-    flex-direction: column; /* Stack common elements vertically */
-    gap: 10px; /* Add some gap between elements */
+    flex-direction: column; 
+    gap: 10px; 
   }
 }
 
-/* -----------------------------------
-   Responsive Styles for Tablets
------------------------------------ */
+
 
 @media (max-width: 1024px) {
   body {
     padding-left: 10px;
-    padding-right: 15px; /* Adjust padding for tablets */
+    padding-right: 10px; 
   }
 
   .common {
-    flex-direction: column; /* Stack common elements vertically */
-    gap: 20px; /* Add more gap for better spacing */
+    flex-direction: column; 
+    gap: 20px; 
   }
 }

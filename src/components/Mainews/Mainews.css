@@ -195,6 +195,7 @@
 
     .whole3 {
         width: 100%;
+        padding: 50px 0px 0px 0px;
     }
 }
 
@@ -236,11 +237,20 @@
         height: 500px; 
     }
 
+    .whole3 {
+        width: 100%;
+        padding: 50px 0px 0px 0px;
+    }
 
 
     @media (max-width: 480px) {
         .whole2 .image {
             height: 300px; 
+        }
+
+        .whole3 {
+            width: 100%;
+            padding: 50px 0px 0px 0px;
         }
     }
 }
