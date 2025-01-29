@@ -30,6 +30,8 @@
     height: 30px;
     padding: 7px;
     cursor: pointer;
+    box-shadow: 0px 0px 30px 4px rgba(0, 191, 255, 0.9);
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .right-bit p {
@@ -86,7 +88,7 @@
 
 .Main-layout h1 {
 
-    
+
     font-size: 40px;
     font-family: auto;
 }
@@ -94,94 +96,120 @@
 
 @media (max-width: 768px) {
     .split-text {
-        flex-direction: row; /* Stack the elements vertically */
-        gap: 75px;
+        flex-direction: row;
+        gap: 9px;
     }
 
     .left,
     .right {
-        padding: 5px 0; /* Adjust padding */
-        text-align: center; /* Center the text */
+        padding: 5px 0;
+        text-align: center;
     }
 
     .divider {
-        height: 30px; /* Adjust divider height for smaller screens */
-        margin: 0 45px; /* Reduce margin */
+        width: 0px;
     }
 
     .right-bit {
-        width: 100%; /* Make right-bit take full width */
-        gap: 10%; /* Increase the gap */
-        justify-content: center; /* Center content */
+        width: 100%;
+        gap: 10%;
+        justify-content: center;
+    }
+
+    .right-bit h3{
+        width: 50%;
+        text-align: center;
+        padding-bottom: 16px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 30px 4px rgba(0, 191, 255, 0.9);
+        transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
     }
 
     .header {
-        flex-direction: column; /* Stack header items vertically */
-        text-align: center; /* Center align text in header */
+        flex-direction: column;
+        text-align: center;
         margin-top: 20px;
         padding: 10px;
     }
 
     .header h1 {
-        width: 100%; /* Full width for h1 */
+        width: 100%;
         padding-left: 0;
         text-align: center;
     }
 
     .header h3 {
-        width: 100%; /* Full width for h3 */
+        width: 100%;
     }
 
     .header h4 {
-        width: 100%; /* Full width for h4 */
-        font-size: 18px; /* Adjust font size */
+        width: 100%;
+        font-size: 18px;
     }
 
     .header p {
-        font-size: 12px; /* Adjust font size */
+        font-size: 12px;
     }
 
     .Main-layout {
-        flex-direction: column; /* Stack Main-layout items vertically */
-        height: auto; /* Adjust height */
+        border-top: 0px;
+        border-bottom: 0px;
+        flex-direction: column;
+        height: auto;
         margin: 20px 0;
         padding: 10px;
     }
 
     .Main-layout h1 {
-        font-size: 28px; /* Adjust font size */
+        font-size: 28px;
+        text-decoration: underline;
     }
 }
 
-/* -----------------------------------
-   Responsive Styles for Tablets
------------------------------------ */
-
 @media (max-width: 1024px) {
     .header h1 {
-        width: 30%; /* Adjust width for tablets */
+        width: 30%;
     }
 
     .header h4 {
-        width: 25%; /* Adjust width for tablets */
-        font-size: 18px; /* Adjust font size */
+        width: 25%;
+        font-size: 18px;
     }
 
     .header p {
-        font-size: 12px; /* Adjust font size for tablets */
+        font-size: 12px;
     }
 
+    .Main-layout {
+        border-top: 0px;
+        border-bottom: 0px;
+    }
+
+
     .Main-layout h1 {
-        font-size: 36px; /* Adjust font size for tablets */
+        font-size: 36px;
+        text-decoration: underline;
     }
 
     .right-bit {
         width: 100%;
-        justify-content: space-between; /* Adjust width for tablets */
+        justify-content: space-between;
+    }
+
+    .right-bit h3{
+        width: 40%;
+        text-align: center;
+        padding-bottom: 16px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 30px 4px rgba(0, 191, 255, 0.9);
+        transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
     }
 
     .divider {
-        height: 30px; /* Adjust divider height */
-        margin: 0 45px; /* Adjust margin */
+        width: 0px;
+    }
+
+    .split-text {
+        gap: 9px;
     }
 }
