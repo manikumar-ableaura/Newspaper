@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Newspaper/static/css/main.9ac36f81.css",
+    "main.js": "/Newspaper/static/js/main.80ff74f3.js",
+    "static/js/488.7ec5e218.chunk.js": "/Newspaper/static/js/488.7ec5e218.chunk.js",
+    "static/media/land.jpg": "/Newspaper/static/media/land.fd015c0751ab56857b71.jpg",
+    "static/media/trum.jpg": "/Newspaper/static/media/trum.1aff16697b569c8bdf76.jpg",
+    "index.html": "/Newspaper/index.html",
+    "main.9ac36f81.css.map": "/Newspaper/static/css/main.9ac36f81.css.map",
+    "main.80ff74f3.js.map": "/Newspaper/static/js/main.80ff74f3.js.map",
+    "488.7ec5e218.chunk.js.map": "/Newspaper/static/js/488.7ec5e218.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ac36f81.css",
+    "static/js/main.80ff74f3.js"
+  ]
+}
