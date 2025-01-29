@@ -119,11 +119,13 @@
 
 
 .titles h2 {
-    color: rgb(207, 199, 199);
+    color: rgb(133, 128, 128);
     font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .twin {
+    align-items: center;
     display: flex;
     font-weight: 500;
     gap: 13%;
@@ -138,7 +140,8 @@
 }
 
 .twin p {
-    font-size: 20px;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
