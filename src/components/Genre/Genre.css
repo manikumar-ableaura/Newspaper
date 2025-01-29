@@ -1,52 +1,56 @@
 .Gene {
-   
-    cursor: pointer;
-    display: flex;
-    font-weight: 600;
-    justify-content: space-around;
-    border-bottom: 3px solid black;
-   
-   
+  text-decoration: underline;
+  cursor: pointer;
+  display: flex;
+  font-weight: 600;
+  justify-content: space-around;
+  border-bottom: 3px solid black;
+
+
 }
 
 .Gene p {
-    padding: 0 50px; 
-    text-align: center;
+  padding: 0 50px;
+  text-align: center;
 }
 
 .Gene p:not(:last-child) {
-    border-right: 2px solid rgb(209, 208, 208);
+  border-right: 2px solid rgb(209, 208, 208);
 }
 
 .Gene p:last-child {
-    border-right: none; 
+  border-right: none;
 }
 
 @media (max-width: 768px) {
-    .Gene {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center;     /* Center align items */
-    }
-  
-    .Gene p {
-      padding: 10px 0; /* Adjust padding for smaller screens */
-      width: 100%;     /* Full width for each item */
-    }
-  
-    .Gene p:not(:last-child) {
-      border-right: none; /* Remove the border for a cleaner look */
-    }
+  .Gene {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    text-decoration: underline;
   }
-  
-  /* Tablets and medium screens (up to 1024px) */
-  @media (max-width: 1024px) {
-    .Gene {
-      flex-direction: column; /* Keep the row layout, but with some adjustments */
-      justify-content: space-between; /* Add space between items */
-    }
-  
-    .Gene p {
-      padding: 0 20px; /* Adjust padding */
-      width: auto;     /* Let the items take up only as much space as needed */
-    }
+
+  .Gene p {
+    padding: 10px 0;
+    width: 100%;
   }
+
+  .Gene p:not(:last-child) {
+    border-right: none;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .Gene {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    text-decoration: underline;
+  }
+
+  .Gene p {
+    padding: 0 20px;
+    width: auto;
+  }
+}
