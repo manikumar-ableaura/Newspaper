@@ -18,25 +18,24 @@
     max-height: 100%;
     width: auto;
     height: auto;
-    transform: rotate(0deg); /* Default orientation */
+    transform: rotate(0deg);
+    /* Default orientation */
 }
+
 /* Landscape behavior */
 .fullscreen-image.landscape {
-    transform: rotate(90deg); /* Rotate for landscape */
+    transform: rotate(90deg);
+    /* Rotate for landscape */
 }
 
 .whole {
-
     width: 18%;
     padding: 60px 50px 0px 50px;
-
 }
 
 
 .firstpart {
-
     border-bottom: 1px solid black;
-
 }
 
 .firstpart h2 {
@@ -45,9 +44,7 @@
 }
 
 .secondpart {
-
     border-bottom: 1px solid black;
-
 }
 
 .secondpart h2 {
@@ -56,9 +53,7 @@
 }
 
 .thirdpart {
-
     border-bottom: 1px solid black;
-
 }
 
 .thirdpart h2 {
@@ -95,11 +90,25 @@
     height: 250px;
 }
 
-
-.whole2 .middly {
-    display: flex;
-    gap: 52%;
+.final img{
+    width: 100%;
+    height: 175px;
+    padding-top: 30px;
 }
+
+.final h3{
+    font-size: 17px;
+
+
+
+}
+
+
+.whole2 .middly,.whole2 .middlye {
+    display: flex;
+    gap: 45%
+}
+
 
 /* ----------------------------------------------- */
 
@@ -114,7 +123,7 @@
     padding-top: 18px;
     width: 100%;
     height: auto;
-    max-height: 600px; 
+    max-height: 600px;
 }
 
 .thirdimg {
@@ -130,10 +139,6 @@
     height: 250px;
 }
 
-.whole2 .middlye {
-    display: flex;
-    gap: 52%;
-}
 
 /* ----------------------------------------------- */
 
@@ -204,9 +209,17 @@
         gap: 10%;
     }
 
-    .whole2 .image {
-        height: 400px; 
+    .whole2 .middly,.whole2 .middlye{
+        display: flex;
+        flex-direction: column;
+        gap: 0
     }
+    
+
+    .whole2 .image {
+        height: 400px;
+    }
+
     .secimg,
     .thirdimg {
         flex-direction: column;
@@ -226,6 +239,10 @@
     .whole3 {
         width: 100%;
         padding: 50px 0px 0px 0px;
+    }
+    .final img{
+        width: 100%;
+        height: 200px;
     }
 }
 
@@ -263,8 +280,15 @@
         gap: 25%;
     }
 
+    .whole2 .middly,.whole2 .middlye {
+        display: flex;
+        flex-direction: column;
+        gap: 0
+    }
+
+
     .whole2 .image {
-        height: 500px; 
+        height: 500px;
     }
 
     .whole3 {
@@ -272,24 +296,37 @@
         padding: 50px 0px 0px 0px;
     }
 
-    .twin{
+    .twin {
         gap: 6%;
         padding-left: 10px;
+    }
+
+    .final img{
+        width: 100%;
+        height: 200px;
     }
 
 
     @media (max-width: 480px) {
         .whole2 .image {
-            height: 300px; 
+            height: 300px;
         }
 
         .whole3 {
             width: 100%;
             padding: 50px 0px 0px 0px;
         }
-        .twin{
+
+
+
+        .twin {
             gap: 6%;
             padding-left: 10px;
+        }
+
+        .final img{
+            width: 100%;
+            height: 200px;
         }
     }
 }
