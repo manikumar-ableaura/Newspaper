@@ -111,7 +111,7 @@
     .right-bit {
         width: 100%;
         gap: 10%;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .right-bit h3{
@@ -119,8 +119,7 @@
         text-align: center;
         padding-bottom: 16px;
         border-radius: 10px;
-        box-shadow: 0px 0px 30px 4px rgba(0, 191, 255, 0.9);
-        transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+        box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.9);
     }
 
     .header {
@@ -191,16 +190,18 @@
 
     .right-bit {
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around
+        ;
     }
 
     .right-bit h3{
-        width: 40%;
+        width: 33%;
+        height: 13px;
         text-align: center;
         padding-bottom: 16px;
         border-radius: 10px;
-        box-shadow: 0px 0px 30px 4px rgba(0, 191, 255, 0.9);
-        transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+        box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.9);
+        
     }
 
     .divider {

@@ -21,7 +21,19 @@ const latestUpdates = [
 ];
 
 function Mainews() {
-    const [view, setView] = useState('trending'); 
+    const [view, setView] = useState('trending');
+    const [isFullscreen, setIsFullscreen] = useState(false);
+    const [fullscreenImageSrc, setFullscreenImageSrc] = useState('');
+
+    const handleImageClick = (src) => {
+        setFullscreenImageSrc(src);
+        setIsFullscreen(true);
+    };
+
+    const closeFullscreen = () => {
+        setIsFullscreen(false);
+    };
+
     return (
         <div className="common">
             <div className="whole">
@@ -57,7 +69,12 @@ function Mainews() {
             </div>
 
             <div className="whole2">
-                <img className="image" src={img} alt="Description " />
+                <img 
+                    className="image" 
+                    src={img} 
+                    alt="Description" 
+                    onClick={() => handleImageClick(img)} 
+                />
 
                 <h1>House Democrats introduce resolution to censure Rep. Gosar over an animation that depicted him killing Rep. Ocasio-Cortez.</h1>
                 <p>No matter the eventual outcome, there was little sign that the negotiation
@@ -71,7 +88,11 @@ function Mainews() {
                 </div>
 
                 <div className="secimg">
-                    <img src={img1} alt="Description " />
+                    <img 
+                        src={img1} 
+                        alt="Description" 
+                        onClick={() => handleImageClick(img1)} 
+                    />
                     <div className="secon">
                         <h2>White House on Defensive as Manchin raises concerns about new spending</h2>
                         <h4>No matter the eventual outcome, there was little sign that the negotiation
@@ -86,7 +107,11 @@ function Mainews() {
                 </div>
 
                 <div className="thirdimg">
-                    <img src={img2} alt="Description " />
+                    <img 
+                        src={img2} 
+                        alt="Description" 
+                        onClick={() => handleImageClick(img2)} 
+                    />
                     <div className="thirdon">
                         <h2>White House on Defensive as Manchin raises concerns about new spending</h2>
                         <h4>No matter the eventual outcome, there was little sign that the negotiation
@@ -133,6 +158,17 @@ function Mainews() {
                     ))
                 )}
             </div>
+
+            
+            {isFullscreen && (
+                <div className="fullscreen-overlay" onClick={closeFullscreen}>
+                    <img 
+                        src={fullscreenImageSrc} 
+                        alt="Fullscreen" 
+                        className={`fullscreen-image ${fullscreenImageSrc.naturalWidth > fullscreenImageSrc.naturalHeight ? 'landscape' : ''}`} 
+                    />
+                </div>
+            )}
         </div>
     );
 }
