@@ -38,35 +38,53 @@ function Mainews() {
     return (
         <div className="common">
             <div className="whole">
-                <div className="firstpart">
-                    <h2>White House on Defensive as Manchin raises concerns about new spending</h2>
-                    <h4>No matter the eventual outcome, there was little sign that the negotiation
-                        would achieve the kind of sweeping deal to battle back warnings that would satisfy the demands of youth activists.</h4>
-                    <p>
-                        By <span style={{ color: "red" }}>Micheal Jordy</span> and <span style={{ color: "red" }}>Sarah Ansari</span>
-                    </p>
-                    <p>33 minutes ago</p>
+                
+
+                    <div className="firstpart">
+                        <h2>White House on Defensive as Manchin raises concerns about new spending</h2>
+                        <h4>No matter the eventual outcome, there was little sign that the negotiation
+                            would achieve the kind of sweeping deal to battle back warnings that would satisfy the demands of youth activists.</h4>
+                        <p>
+                            By <span style={{ color: "red" }}>Micheal Jordy</span> and <span style={{ color: "red" }}>Sarah Ansari</span>
+                        </p>
+                        <p>33 minutes ago</p>
+                    </div>
+
+                    <div className="secondpart">
+                        <h2>White House on Defensive as Manchin raises concerns about new spending</h2>
+                        <h4>No matter the eventual outcome, there was little sign that the negotiation
+                            would achieve the kind of sweeping deal to battle back warnings that would satisfy the demands of youth activists.</h4>
+                        <p>
+                            By <span style={{ color: "red" }}>Micheal Jordy</span> and <span style={{ color: "red" }}>Sarah Ansari</span>
+                        </p>
+                        <p>33 minutes ago</p>
+                    </div>
+
+                    <div className="thirdpart">
+                        <h2>White House on Defensive as Manchin raises concerns about new spending</h2>
+                        <h4>No matter the eventual outcome, there was little sign that the negotiation
+                            would achieve the kind of sweeping deal to battle back warnings that would satisfy the demands of youth activists.</h4>
+                        <p>
+                            By <span style={{ color: "red" }}>Micheal Jordy</span> and <span style={{ color: "red" }}>Sarah Ansari</span>
+                        </p>
+                        <p>33 minutes ago</p>
+                    </div>
+                
+
+                <div className="forthpart">
+                    <div className="fp1">
+                        <h2> Subscribe our Newsletter</h2>
+                        <p>
+                            <input type="email" placeholder="Enter your e-mail here" />
+                        </p>
+                    </div>
+
+                    <div className="fp2">
+                        <p><i className="fa fa-envelope"></i></p>
+                        <p><i className="fa fa-arrow-right"></i></p>
+                    </div>
                 </div>
 
-                <div className="secondpart">
-                    <h2>White House on Defensive as Manchin raises concerns about new spending</h2>
-                    <h4>No matter the eventual outcome, there was little sign that the negotiation
-                        would achieve the kind of sweeping deal to battle back warnings that would satisfy the demands of youth activists.</h4>
-                    <p>
-                        By <span style={{ color: "red" }}>Micheal Jordy</span> and <span style={{ color: "red" }}>Sarah Ansari</span>
-                    </p>
-                    <p>33 minutes ago</p>
-                </div>
-
-                <div className="thirdpart">
-                    <h2>White House on Defensive as Manchin raises concerns about new spending</h2>
-                    <h4>No matter the eventual outcome, there was little sign that the negotiation
-                        would achieve the kind of sweeping deal to battle back warnings that would satisfy the demands of youth activists.</h4>
-                    <p>
-                        By <span style={{ color: "red" }}>Micheal Jordy</span> and <span style={{ color: "red" }}>Sarah Ansari</span>
-                    </p>
-                    <p>33 minutes ago</p>
-                </div>
             </div>
 
             <div className="whole2">
@@ -131,14 +149,12 @@ function Mainews() {
                 <div className="titles">
                     <h2
                         style={{ borderBottom: view === 'trending' ? "3px solid red" : "3px solid black", paddingBottom: "5px", cursor: "pointer" }}
-                        onClick={() => setView('trending')}
-                    >
+                        onClick={() => setView('trending')}>
                         Trending Topic
                     </h2>
                     <h2
                         style={{ borderBottom: view === 'latest' ? "3px solid red" : "3px solid black", paddingBottom: "5px", marginLeft: "20px", cursor: "pointer" }}
-                        onClick={() => setView('latest')}
-                    >
+                        onClick={() => setView('latest')}>
                         Latest Update
                     </h2>
                 </div>
@@ -177,12 +193,6 @@ function Mainews() {
                     <p>33 minutes ago</p>
 
                 </div>
-
-
-
-
-
-
 
             </div>
 
